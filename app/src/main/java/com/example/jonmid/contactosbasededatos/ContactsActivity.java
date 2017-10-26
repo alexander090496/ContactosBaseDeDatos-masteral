@@ -78,6 +78,7 @@ public class ContactsActivity extends AppCompatActivity {
             recyclerViewContacts.setAdapter(contactAdapter);
         }else {
             Toast.makeText(this, "no tienes contactos", Toast.LENGTH_SHORT).show();
+
         }
 
     }

@@ -1,6 +1,7 @@
 package com.example.jonmid.contactosbasededatos.Views;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
@@ -64,7 +65,9 @@ public class RegisterContactActivity extends AppCompatActivity {
         textInputEditTextEmail.setText("");
 
         Toast.makeText(this, "El contacto se registro correctamente", Toast.LENGTH_SHORT).show();
-        ///ContactsActivity contactsActivity = new ContactsActivity();
-        //contactsActivity.proccesData();
+
+        Intent intent = new Intent(this,ContactsActivity.class);
+        startActivity(intent);
+
     }
 }
